@@ -1,0 +1,21 @@
+@mixin DocSet() {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+@mixin FlexSet($justify_content, $align_items, $flex-direciton) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    flex-direction: $flex-direciton;
+}
+
+@mixin wdSet($wd, $hg) {
+    width: $wd;
+    min-height: $hg;
+}
